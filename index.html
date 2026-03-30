@@ -1,120 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Car Rental Service</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+import image from "./image.png";
+import "./style.css";
 
-<!-- HEADER / MENU -->
-<header class="header">
-  <div class="logo">🚗 Rental Service</div>
-  <nav class="menu">
-    <a href="#">Home</a>
-    <a href="#">Car Category</a>
-    <a href="#">Quotation</a>
-    <a href="#">Contact</a>
-    <a href="#">About us</a>
-    <a href="#">Language</a>
-  </nav>
-  <button class="btn-book">Book Now</button>
-</header>
+export const Box = (): JSX.Element => {
+  return (
+    <div className="box">
+      <div className="group">
+        <div className="header">
+          <img className="image" alt="Image" src={image} />
 
-<!-- HERO -->
-<section class="hero">
-  <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="car">
-  <div class="play-btn">▶</div>
-</section>
+          <div className="nav">
+            <div className="text-wrapper">Home</div>
+          </div>
 
-<!-- SERVICES -->
-<section class="services">
-  <h2>We offer a wide range of services tailored to meet our customers’ needs</h2>
+          <div className="div-wrapper">
+            <div className="div">Car Category</div>
+          </div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Business Trips</h3>
-      <ul>
-        <li>Professional drivers</li>
-        <li>Professional service</li>
-        <li>Foreign language skills</li>
-      </ul>
+          <div className="div-wrapper">
+            <div className="div">Quotation</div>
+          </div>
+
+          <div className="div-wrapper">
+            <div className="div">Contact</div>
+          </div>
+
+          <div className="nav-2">
+            <div className="text-wrapper-2">About us</div>
+          </div>
+
+          <div className="nav-3">
+            <div className="text-wrapper-3">Language</div>
+          </div>
+
+          <div className="nav-4">
+            <div className="text-wrapper-4">Book Now</div>
+          </div>
+        </div>
+
+        <div className="testimonial">
+          <div className="flexcontainer">
+            <p className="text">
+              <span className="span">Chauffeur &amp; Limousine</span>
+            </p>
+
+            <p className="text">
+              <span className="text-wrapper-5">HANOI TOURISM TRADING</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Airport Transfer</h3>
-      <ul>
-        <li>Safe and on time</li>
-        <li>Wide vehicle options</li>
-        <li>Professional service</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>VIP Service</h3>
-      <ul>
-        <li>Luxury vehicles</li>
-        <li>Dedicated service</li>
-        <li>24/7 availability</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Long-term Rental</h3>
-      <ul>
-        <li>Professional drivers</li>
-        <li>Flexible service</li>
-        <li>Foreign language skills</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Short-term Rental</h3>
-      <ul>
-        <li>Safe and on time</li>
-        <li>Wide options</li>
-        <li>Professional service</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Self-drive Rental</h3>
-      <ul>
-        <li>Luxury vehicles</li>
-        <li>Good price</li>
-        <li>Easy process</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- INFO -->
-<section class="info">
-  <div class="info-box">
-    <h3>Safety & Insurance</h3>
-    <p>We always prioritize safety in every journey.</p>
-  </div>
-
-  <div class="info-box">
-    <h3>Professional Drivers</h3>
-    <p>Experienced and courteous drivers.</p>
-  </div>
-
-  <div class="info-box">
-    <h3>Comprehensive Insurance</h3>
-    <p>Full insurance coverage included.</p>
-  </div>
-
-  <div class="info-box">
-    <h3>24/7 Support</h3>
-    <p>Always ready to assist anytime.</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2026 Car Rental Service</p>
-</footer>
-
-</body>
-</html>
+  );
+};
